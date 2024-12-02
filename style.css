@@ -1,0 +1,115 @@
+html, body{
+ height:100%;
+}
+
+body{
+ display:flex;
+ justify-content: center;
+ text-align: center;
+ background-color: #37394D;
+ font-family:'Francois One', sans-serif;
+ font-size:25px;
+ color:#f56dc3;
+ letter-spacing: 5px;
+}
+
+.box{
+ display:flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content:center;
+ height:100%;
+}
+
+.heart{
+ position:relative;
+ width:100px;
+ height:90px;
+ margin:0 auto;
+ cursor: hidden;
+}
+
+.heart:before,
+.heart:after{
+ position: absolute;
+ content:'';
+ left:50px;
+ top:0vh;
+ width:50px;
+ height:80px;
+ background-color: #f56dc3;
+ border-radius:50px 50px 0 0;
+ transform: rotate(-45deg);
+ transform-origin: 0 100%;
+ transition-delay: 1s;
+}
+
+.heart:after{
+ position:absolute;
+ content:'';
+ left:0;
+ transform: rotate(45deg);
+ transform-origin: 100% 100%;
+}
+
+.tab2a-one{
+  position: absolute;
+  width:20px;
+  height:30px;
+  background-color: black;
+  top:39vh;
+  z-index:-2;
+}
+
+.tab2a-two{
+ position: absolute;
+  width:25px;
+  height:10px;
+  background-color: black;
+  top:39vh;
+  z-index:-2;
+}
+
+.heart-tab2a-1{
+ position: absolute;
+  width:20px;
+  height:30px;
+  background-color: #f56dc3;
+  border-radius:50%;
+  left:23vh;
+  top:36vh;
+  z-index:-2;
+  transform:rotate(45deg);
+}
+
+.heart-tab2a-2{
+ position: absolute;
+  width:20px;
+  height:30px;
+  background-color: #f56dc3;
+  border-radius:50%;
+  left:22vh;
+  top:36vh;
+  z-index:-2;
+  transform:rotate(-45deg);
+}
+
+.white-reflexion{
+ position: absolute ;
+ background-color: #fff;
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ top:45vh;
+ left:200px;
+}
+
+p{
+ position:absolute;
+ top:120px;
+}
+
+.heart:hover{
+ transform:translateX(90px);
+ transition:0.5s;
+}
